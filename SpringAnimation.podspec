@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "SpringAnimation"
-s.version      = "1.0.2"
+s.version      = "1.0.3"
 s.summary      = "一个简单易用的iOS链式动画扩展库 Swift"
 
 s.homepage     = "https://github.com/lixiang1994/Spring"
@@ -12,7 +12,7 @@ s.author       = { "LEE" => "18611401994@163.com" }
 
 s.platform     = :ios, "9.0"
 
-s.source       = { :git => "https://github.com/lixiang1994/Spring.git", :tag => "1.0.2"}
+s.source       = { :git => "https://github.com/lixiang1994/Spring.git", :tag => "1.0.3"}
 
 s.source_files  = "Spring/**/*.swift"
 
