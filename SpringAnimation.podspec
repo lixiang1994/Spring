@@ -14,7 +14,7 @@ s.platform     = :ios, "9.0"
 
 s.source       = { :git => "https://github.com/lixiang1994/Spring.git", :tag => s.version }
 
-s.source_files  = "SpringAnimation/**/*.swift"
+s.source_files  = "Spring/**/*.swift"
 
 s.requires_arc = true
 
