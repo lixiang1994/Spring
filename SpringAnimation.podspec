@@ -12,7 +12,7 @@ s.author       = { "LEE" => "18611401994@163.com" }
 
 s.platform     = :ios, "9.0"
 
-s.source       = { :git => "https://github.com/lixiang1994/Spring.git", :tag => "1.0.3"}
+s.source       = { :git => "https://github.com/lixiang1994/Spring.git", :tag => s.version }
 
 s.source_files  = "Spring/**/*.swift"
 
@@ -20,6 +20,7 @@ s.requires_arc = true
 
 s.frameworks = "UIKit", "Foundation"
 
-s.swift_version = "5.0"
+s.swift_version = "4.2"
+s.swift_versions = ["4.2", "5.0"]
 
 end
