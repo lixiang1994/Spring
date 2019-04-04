@@ -29,7 +29,7 @@ pod 'SpringAnimation'
 First make sure to import the framework:
 
 ```swift
-import Spring
+import SpringAnimation
 ```
 
 Here are some usage examples. All devices are also available as simulators:
