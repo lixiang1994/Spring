@@ -28,7 +28,7 @@ pod 'SpringAnimation'
 首先导入:
 
 ```swift
-import Spring
+import SpringAnimation
 ```
 
 下面是一些简单示例. 支持所有设备和模拟器:
