@@ -7,28 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C93AA3DD225B19F700EDAB53 /* Solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3D8225B19F700EDAB53 /* Solver.swift */; };
+		C93AA3DE225B19F700EDAB53 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3D9225B19F700EDAB53 /* UIView+Animation.swift */; };
+		C93AA3DF225B19F700EDAB53 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3DA225B19F700EDAB53 /* Animation.swift */; };
+		C93AA3E0225B19F700EDAB53 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3DB225B19F700EDAB53 /* Config.swift */; };
+		C93AA3E1225B19F700EDAB53 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3DC225B19F700EDAB53 /* Wrapper.swift */; };
 		C93FF795224F3492002277BC /* Spring.h in Headers */ = {isa = PBXBuildFile; fileRef = C93FF793224F3492002277BC /* Spring.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C93FF7A1224F34AC002277BC /* Solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF79B224F34AB002277BC /* Solver.swift */; };
-		C93FF7A2224F34AC002277BC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF79C224F34AB002277BC /* Config.swift */; };
-		C93FF7A3224F34AC002277BC /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF79D224F34AB002277BC /* Wrapper.swift */; };
-		C93FF7A4224F34AC002277BC /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF79E224F34AB002277BC /* UIView+Animation.swift */; };
-		C93FF7A6224F34AC002277BC /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF7A0224F34AC002277BC /* Animation.swift */; };
-		C93FF7AC224F3F43002277BC /* Animation.swift in Headers */ = {isa = PBXBuildFile; fileRef = C93FF7A0224F34AC002277BC /* Animation.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		C93FF7AD224F3F43002277BC /* Config.swift in Headers */ = {isa = PBXBuildFile; fileRef = C93FF79C224F34AB002277BC /* Config.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		C93FF7AE224F3F43002277BC /* Solver.swift in Headers */ = {isa = PBXBuildFile; fileRef = C93FF79B224F34AB002277BC /* Solver.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		C93FF7AF224F3F43002277BC /* UIView+Animation.swift in Headers */ = {isa = PBXBuildFile; fileRef = C93FF79E224F34AB002277BC /* UIView+Animation.swift */; settings = {ATTRIBUTES = (Public, ); }; };
-		C93FF7B0224F3F43002277BC /* Wrapper.swift in Headers */ = {isa = PBXBuildFile; fileRef = C93FF79D224F34AB002277BC /* Wrapper.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C93AA3D8225B19F700EDAB53 /* Solver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solver.swift; sourceTree = "<group>"; };
+		C93AA3D9225B19F700EDAB53 /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
+		C93AA3DA225B19F700EDAB53 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		C93AA3DB225B19F700EDAB53 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		C93AA3DC225B19F700EDAB53 /* Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
 		C93FF790224F3492002277BC /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93FF793224F3492002277BC /* Spring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
 		C93FF794224F3492002277BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C93FF79B224F34AB002277BC /* Solver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Solver.swift; path = ../../../Spring/Solver.swift; sourceTree = "<group>"; };
-		C93FF79C224F34AB002277BC /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Config.swift; path = ../../../Spring/Config.swift; sourceTree = "<group>"; };
-		C93FF79D224F34AB002277BC /* Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Wrapper.swift; path = ../../../Spring/Wrapper.swift; sourceTree = "<group>"; };
-		C93FF79E224F34AB002277BC /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Animation.swift"; path = "../../../Spring/UIView+Animation.swift"; sourceTree = "<group>"; };
-		C93FF7A0224F34AC002277BC /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Animation.swift; path = ../../../Spring/Animation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +40,7 @@
 		C93FF786224F3492002277BC = {
 			isa = PBXGroup;
 			children = (
-				C93FF792224F3492002277BC /* Spring */,
+				C93FF792224F3492002277BC /* Sources */,
 				C93FF791224F3492002277BC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -58,18 +53,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C93FF792224F3492002277BC /* Spring */ = {
+		C93FF792224F3492002277BC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				C93FF7A0224F34AC002277BC /* Animation.swift */,
-				C93FF79C224F34AB002277BC /* Config.swift */,
-				C93FF79B224F34AB002277BC /* Solver.swift */,
-				C93FF79E224F34AB002277BC /* UIView+Animation.swift */,
-				C93FF79D224F34AB002277BC /* Wrapper.swift */,
+				C93AA3DA225B19F700EDAB53 /* Animation.swift */,
+				C93AA3DB225B19F700EDAB53 /* Config.swift */,
+				C93AA3D8225B19F700EDAB53 /* Solver.swift */,
+				C93AA3D9225B19F700EDAB53 /* UIView+Animation.swift */,
+				C93AA3DC225B19F700EDAB53 /* Wrapper.swift */,
 				C93FF793224F3492002277BC /* Spring.h */,
 				C93FF794224F3492002277BC /* Info.plist */,
 			);
-			path = Spring;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,11 +75,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93FF795224F3492002277BC /* Spring.h in Headers */,
-				C93FF7AC224F3F43002277BC /* Animation.swift in Headers */,
-				C93FF7AD224F3F43002277BC /* Config.swift in Headers */,
-				C93FF7AE224F3F43002277BC /* Solver.swift in Headers */,
-				C93FF7AF224F3F43002277BC /* UIView+Animation.swift in Headers */,
-				C93FF7B0224F3F43002277BC /* Wrapper.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,11 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C93FF7A1224F34AC002277BC /* Solver.swift in Sources */,
-				C93FF7A4224F34AC002277BC /* UIView+Animation.swift in Sources */,
-				C93FF7A2224F34AC002277BC /* Config.swift in Sources */,
-				C93FF7A6224F34AC002277BC /* Animation.swift in Sources */,
-				C93FF7A3224F34AC002277BC /* Wrapper.swift in Sources */,
+				C93AA3DD225B19F700EDAB53 /* Solver.swift in Sources */,
+				C93AA3E1225B19F700EDAB53 /* Wrapper.swift in Sources */,
+				C93AA3E0225B19F700EDAB53 /* Config.swift in Sources */,
+				C93AA3DF225B19F700EDAB53 /* Animation.swift in Sources */,
+				C93AA3DE225B19F700EDAB53 /* UIView+Animation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,7 +291,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Spring/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,7 +321,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Spring/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

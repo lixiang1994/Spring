@@ -15,12 +15,16 @@
 
 ## 安装
 
-Spring 仅支持 CocoaPods 方式.
-
 **Podfile**
 
 ```ruby
 pod 'SpringAnimation'
+```
+
+**Carthage**
+
+```ruby
+github "lixiang1994/Spring"
 ```
 
 ## 使用

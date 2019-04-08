@@ -16,12 +16,16 @@
 
 ## Installation
 
-Spring officially supports CocoaPods only.
-
 **Podfile**
 
 ```ruby
 pod 'SpringAnimation'
+```
+
+**Carthage**
+
+```ruby
+github "lixiang1994/Spring"
 ```
 
 ## Usage

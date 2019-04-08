@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C93AA3EA225B1A4200EDAB53 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3E3225B1A4200EDAB53 /* Animation.swift */; };
+		C93AA3EB225B1A4200EDAB53 /* Solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3E4225B1A4200EDAB53 /* Solver.swift */; };
+		C93AA3EC225B1A4200EDAB53 /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3E5225B1A4200EDAB53 /* Wrapper.swift */; };
+		C93AA3ED225B1A4200EDAB53 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3E6225B1A4200EDAB53 /* Config.swift */; };
+		C93AA3EF225B1A4200EDAB53 /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93AA3E9225B1A4200EDAB53 /* UIView+Animation.swift */; };
 		C93FF766224F1F35002277BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF765224F1F35002277BC /* AppDelegate.swift */; };
 		C93FF768224F1F35002277BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF767224F1F35002277BC /* ViewController.swift */; };
 		C93FF76B224F1F35002277BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93FF769224F1F35002277BC /* Main.storyboard */; };
 		C93FF76D224F1F37002277BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93FF76C224F1F37002277BC /* Assets.xcassets */; };
 		C93FF770224F1F37002277BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93FF76E224F1F37002277BC /* LaunchScreen.storyboard */; };
-		C93FF7BD224F4550002277BC /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF7B8224F4550002277BC /* Animation.swift */; };
-		C93FF7BE224F4550002277BC /* Solver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF7B9224F4550002277BC /* Solver.swift */; };
-		C93FF7BF224F4550002277BC /* Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF7BA224F4550002277BC /* Wrapper.swift */; };
-		C93FF7C0224F4550002277BC /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF7BB224F4550002277BC /* Config.swift */; };
-		C93FF7C1224F4550002277BC /* UIView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93FF7BC224F4550002277BC /* UIView+Animation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -33,6 +33,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C93AA3E3225B1A4200EDAB53 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		C93AA3E4225B1A4200EDAB53 /* Solver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solver.swift; sourceTree = "<group>"; };
+		C93AA3E5225B1A4200EDAB53 /* Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
+		C93AA3E6225B1A4200EDAB53 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		C93AA3E7225B1A4200EDAB53 /* Spring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
+		C93AA3E8225B1A4200EDAB53 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C93AA3E9225B1A4200EDAB53 /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
 		C93FF762224F1F35002277BC /* SpringDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93FF765224F1F35002277BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C93FF767224F1F35002277BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,11 +47,6 @@
 		C93FF76C224F1F37002277BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C93FF76F224F1F37002277BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C93FF771224F1F37002277BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C93FF7B8224F4550002277BC /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
-		C93FF7B9224F4550002277BC /* Solver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Solver.swift; sourceTree = "<group>"; };
-		C93FF7BA224F4550002277BC /* Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
-		C93FF7BB224F4550002277BC /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
-		C93FF7BC224F4550002277BC /* UIView+Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animation.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C93AA3E2225B1A4200EDAB53 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				C93AA3E3225B1A4200EDAB53 /* Animation.swift */,
+				C93AA3E4225B1A4200EDAB53 /* Solver.swift */,
+				C93AA3E5225B1A4200EDAB53 /* Wrapper.swift */,
+				C93AA3E6225B1A4200EDAB53 /* Config.swift */,
+				C93AA3E7225B1A4200EDAB53 /* Spring.h */,
+				C93AA3E8225B1A4200EDAB53 /* Info.plist */,
+				C93AA3E9225B1A4200EDAB53 /* UIView+Animation.swift */,
+			);
+			name = Sources;
+			path = ../../Sources;
+			sourceTree = "<group>";
+		};
 		C93FF759224F1F35002277BC = {
 			isa = PBXGroup;
 			children = (
@@ -77,7 +94,7 @@
 		C93FF764224F1F35002277BC /* SpringDemo */ = {
 			isa = PBXGroup;
 			children = (
-				C93FF7B7224F4550002277BC /* Spring */,
+				C93AA3E2225B1A4200EDAB53 /* Sources */,
 				C93FF765224F1F35002277BC /* AppDelegate.swift */,
 				C93FF767224F1F35002277BC /* ViewController.swift */,
 				C93FF769224F1F35002277BC /* Main.storyboard */,
@@ -86,19 +103,6 @@
 				C93FF771224F1F37002277BC /* Info.plist */,
 			);
 			path = SpringDemo;
-			sourceTree = "<group>";
-		};
-		C93FF7B7224F4550002277BC /* Spring */ = {
-			isa = PBXGroup;
-			children = (
-				C93FF7B8224F4550002277BC /* Animation.swift */,
-				C93FF7B9224F4550002277BC /* Solver.swift */,
-				C93FF7BA224F4550002277BC /* Wrapper.swift */,
-				C93FF7BB224F4550002277BC /* Config.swift */,
-				C93FF7BC224F4550002277BC /* UIView+Animation.swift */,
-			);
-			name = Spring;
-			path = ../../Spring;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,12 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93FF768224F1F35002277BC /* ViewController.swift in Sources */,
-				C93FF7BF224F4550002277BC /* Wrapper.swift in Sources */,
-				C93FF7BD224F4550002277BC /* Animation.swift in Sources */,
-				C93FF7BE224F4550002277BC /* Solver.swift in Sources */,
+				C93AA3EC225B1A4200EDAB53 /* Wrapper.swift in Sources */,
+				C93AA3EA225B1A4200EDAB53 /* Animation.swift in Sources */,
+				C93AA3EB225B1A4200EDAB53 /* Solver.swift in Sources */,
 				C93FF766224F1F35002277BC /* AppDelegate.swift in Sources */,
-				C93FF7C1224F4550002277BC /* UIView+Animation.swift in Sources */,
-				C93FF7C0224F4550002277BC /* Config.swift in Sources */,
+				C93AA3EF225B1A4200EDAB53 /* UIView+Animation.swift in Sources */,
+				C93AA3ED225B1A4200EDAB53 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
