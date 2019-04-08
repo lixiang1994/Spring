@@ -21,7 +21,7 @@
 		C93AA3DA225B19F700EDAB53 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		C93AA3DB225B19F700EDAB53 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		C93AA3DC225B19F700EDAB53 /* Wrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wrapper.swift; sourceTree = "<group>"; };
-		C93FF790224F3492002277BC /* Spring.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Spring.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93FF790224F3492002277BC /* SpringAnimation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SpringAnimation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93FF793224F3492002277BC /* Spring.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Spring.h; sourceTree = "<group>"; };
 		C93FF794224F3492002277BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -48,7 +48,7 @@
 		C93FF791224F3492002277BC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C93FF790224F3492002277BC /* Spring.framework */,
+				C93FF790224F3492002277BC /* SpringAnimation.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,9 +81,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		C93FF78F224F3492002277BC /* Spring */ = {
+		C93FF78F224F3492002277BC /* SpringAnimation */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C93FF798224F3492002277BC /* Build configuration list for PBXNativeTarget "Spring" */;
+			buildConfigurationList = C93FF798224F3492002277BC /* Build configuration list for PBXNativeTarget "SpringAnimation" */;
 			buildPhases = (
 				C93FF78B224F3492002277BC /* Headers */,
 				C93FF78C224F3492002277BC /* Sources */,
@@ -94,9 +94,9 @@
 			);
 			dependencies = (
 			);
-			name = Spring;
+			name = SpringAnimation;
 			productName = Spring;
-			productReference = C93FF790224F3492002277BC /* Spring.framework */;
+			productReference = C93FF790224F3492002277BC /* SpringAnimation.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -114,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C93FF78A224F3492002277BC /* Build configuration list for PBXProject "Spring" */;
+			buildConfigurationList = C93FF78A224F3492002277BC /* Build configuration list for PBXProject "SpringAnimation" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C93FF78F224F3492002277BC /* Spring */,
+				C93FF78F224F3492002277BC /* SpringAnimation */,
 			);
 		};
 /* End PBXProject section */
@@ -341,7 +341,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C93FF78A224F3492002277BC /* Build configuration list for PBXProject "Spring" */ = {
+		C93FF78A224F3492002277BC /* Build configuration list for PBXProject "SpringAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C93FF796224F3492002277BC /* Debug */,
@@ -350,7 +350,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C93FF798224F3492002277BC /* Build configuration list for PBXNativeTarget "Spring" */ = {
+		C93FF798224F3492002277BC /* Build configuration list for PBXNativeTarget "SpringAnimation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C93FF799224F3492002277BC /* Debug */,

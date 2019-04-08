@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "C93FF78F224F3492002277BC"
-               BuildableName = "Spring.framework"
-               BlueprintName = "Spring"
-               ReferencedContainer = "container:Spring.xcodeproj">
+               BuildableName = "SpringAnimation.framework"
+               BlueprintName = "SpringAnimation"
+               ReferencedContainer = "container:SpringAnimation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C93FF78F224F3492002277BC"
-            BuildableName = "Spring.framework"
-            BlueprintName = "Spring"
-            ReferencedContainer = "container:Spring.xcodeproj">
+            BuildableName = "SpringAnimation.framework"
+            BlueprintName = "SpringAnimation"
+            ReferencedContainer = "container:SpringAnimation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "C93FF78F224F3492002277BC"
-            BuildableName = "Spring.framework"
-            BlueprintName = "Spring"
-            ReferencedContainer = "container:Spring.xcodeproj">
+            BuildableName = "SpringAnimation.framework"
+            BlueprintName = "SpringAnimation"
+            ReferencedContainer = "container:SpringAnimation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

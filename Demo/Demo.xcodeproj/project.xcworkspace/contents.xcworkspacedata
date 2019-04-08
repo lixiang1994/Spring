@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Spring.xcodeproj">
+      location = "self:/Users/lixiang/Documents/Github/Spring/Demo/Demo.xcodeproj">
    </FileRef>
 </Workspace>
