@@ -15,13 +15,13 @@
 
 ## 安装
 
-**Podfile**
+**CocoaPods - Podfile**
 
 ```ruby
 pod 'SpringAnimation'
 ```
 
-**Carthage**
+**Carthage - Cartfile**
 
 ```ruby
 github "lixiang1994/Spring"
