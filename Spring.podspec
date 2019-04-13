@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
-s.name         = "SpringAnimation"
-s.version      = "1.0.8"
+s.name         = "Spring"
+s.version      = "1.1.0"
 s.summary      = "一个简单易用的iOS链式动画扩展库 Swift"
 
 s.homepage     = "https://github.com/lixiang1994/Spring"
@@ -20,7 +20,7 @@ s.requires_arc = true
 
 s.frameworks = "UIKit", "Foundation"
 
-s.swift_version = "4.2"
-s.swift_versions = ["4.2", "5.0"]
+s.swift_version = "5.0"
+#s.swift_versions = ["4.2", "5.0"]
 
 end

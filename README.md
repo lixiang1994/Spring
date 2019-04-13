@@ -19,7 +19,9 @@
 **CocoaPods - Podfile**
 
 ```ruby
-pod 'SpringAnimation'
+source 'https://github.com/lixiang1994/Specs'
+
+pod 'Spring'
 ```
 
 **Carthage - Cartfile**
