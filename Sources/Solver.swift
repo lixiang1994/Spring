@@ -162,7 +162,7 @@ extension Solver {
             animation.keyPath = "opacity"
             animation.fromValue = 1
             animation.toValue = 0
-            animation.timingFunction = getTimingFunction(curve: curve)
+            animation.timingFunction = curve.timingFunction
             animation.duration = CFTimeInterval(duration)
             animation.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
             animation.autoreverses = true
@@ -205,7 +205,7 @@ extension Solver {
             animation.keyPath = "position.x"
             animation.values = [0, 30 * force, -30 * force, 30 * force, 0]
             animation.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
-            animation.timingFunction = getTimingFunction(curve: curve)
+            animation.timingFunction = curve.timingFunction
             animation.duration = CFTimeInterval(duration)
             animation.isAdditive = true
             animation.repeatCount = repeatCount
@@ -217,7 +217,7 @@ extension Solver {
             animation.keyPath = "transform.scale"
             animation.values = [0, 0.2*force, -0.2*force, 0.2*force, 0]
             animation.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
-            animation.timingFunction = getTimingFunction(curve: curve)
+            animation.timingFunction = curve.timingFunction
             animation.duration = CFTimeInterval(duration)
             animation.isAdditive = true
             animation.repeatCount = repeatCount
@@ -228,7 +228,7 @@ extension Solver {
             let animation = CABasicAnimation(keyPath: "transform.scale")
             animation.fromValue = -0.023*force
             animation.toValue = 0.023*force
-            animation.timingFunction = getTimingFunction(curve: curve)
+            animation.timingFunction = curve.timingFunction
             animation.duration = CFTimeInterval(duration)
             animation.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
             animation.autoreverses = true
@@ -252,7 +252,7 @@ extension Solver {
             animation.duration = CFTimeInterval(duration)
             animation.repeatCount = repeatCount
             animation.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
-            animation.timingFunction = getTimingFunction(curve: curve)
+            animation.timingFunction = curve.timingFunction
             layer.add(animation, forKey: "3d")
             
         case .flipY:
@@ -268,7 +268,7 @@ extension Solver {
             animation.duration = CFTimeInterval(duration)
             animation.repeatCount = repeatCount
             animation.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
-            animation.timingFunction = getTimingFunction(curve: curve)
+            animation.timingFunction = curve.timingFunction
             layer.add(animation, forKey: "3d")
             
         case .morph:
@@ -276,7 +276,7 @@ extension Solver {
             morphX.keyPath = "transform.scale.x"
             morphX.values = [1, 1.3 * force, 0.7, 1.3 * force, 1]
             morphX.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
-            morphX.timingFunction = getTimingFunction(curve: curve)
+            morphX.timingFunction = curve.timingFunction
             morphX.duration = CFTimeInterval(duration)
             morphX.repeatCount = repeatCount
             morphX.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
@@ -286,7 +286,7 @@ extension Solver {
             morphY.keyPath = "transform.scale.y"
             morphY.values = [1, 0.7, 1.3 * force, 0.7, 1]
             morphY.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
-            morphY.timingFunction = getTimingFunction(curve: curve)
+            morphY.timingFunction = curve.timingFunction
             morphY.duration = CFTimeInterval(duration)
             morphY.repeatCount = repeatCount
             morphY.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
@@ -297,7 +297,7 @@ extension Solver {
             morphX.keyPath = "transform.scale.x"
             morphX.values = [1, 1.5 * force, 0.5, 1.5 * force, 1]
             morphX.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
-            morphX.timingFunction = getTimingFunction(curve: curve)
+            morphX.timingFunction = curve.timingFunction
             morphX.duration = CFTimeInterval(duration)
             morphX.repeatCount = repeatCount
             morphX.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
@@ -307,7 +307,7 @@ extension Solver {
             morphY.keyPath = "transform.scale.y"
             morphY.values = [1, 0.5, 1, 0.5, 1]
             morphY.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
-            morphY.timingFunction = getTimingFunction(curve: curve)
+            morphY.timingFunction = curve.timingFunction
             morphY.duration = CFTimeInterval(duration)
             morphY.repeatCount = repeatCount
             morphY.beginTime = CACurrentMediaTime() + CFTimeInterval(delay)
@@ -338,7 +338,7 @@ extension Solver {
             x.keyPath = "position.x"
             x.values = [0, 30 * force, -30 * force, 30 * force, 0]
             x.keyTimes = [0, 0.2, 0.4, 0.6, 0.8, 1]
-            x.timingFunction = getTimingFunction(curve: curve)
+            x.timingFunction = curve.timingFunction
             x.duration = CFTimeInterval(duration)
             x.isAdditive = true
             x.repeatCount = repeatCount
@@ -394,55 +394,12 @@ extension Solver {
             delay: TimeInterval(delay),
             usingSpringWithDamping: damping,
             initialSpringVelocity: velocity,
-            options: [getAnimationOptions(curve: curve), .allowUserInteraction],
+            options: [curve.animationOptions, .allowUserInteraction],
             animations: animations
         ) { [weak self] finished in
-            completion?()
+            
             self?.resetAll()
-        }
-    }
-    
-    private func getAnimationOptions(curve: Animation.Curve) -> UIView.AnimationOptions {
-        switch curve {
-        case .easeIn:       return .curveEaseIn
-        case .easeOut:      return .curveEaseOut
-        case .easeInOut:    return .curveEaseInOut
-        default:            return .curveLinear
-        }
-    }
-    
-    private func getTimingFunction(curve: Animation.Curve) -> CAMediaTimingFunction {
-        switch curve {
-        case .easeIn: return .init(name: .easeIn)
-        case .easeOut: return .init(name: .easeOut)
-        case .easeInOut: return .init(name: .easeInEaseOut)
-        case .linear: return .init(name: .linear)
-        case .spring: return .init(controlPoints: 0.5, 1.1 + Float(force / 3), 1, 1)
-        case .easeInSine: return .init(controlPoints: 0.47, 0, 0.745, 0.715)
-        case .easeOutSine: return .init(controlPoints: 0.39, 0.575, 0.565, 1)
-        case .easeInOutSine: return .init(controlPoints: 0.445, 0.05, 0.55, 0.95)
-        case .easeInQuad: return .init(controlPoints: 0.55, 0.085, 0.68, 0.53)
-        case .easeOutQuad: return .init(controlPoints: 0.25, 0.46, 0.45, 0.94)
-        case .easeInOutQuad: return .init(controlPoints: 0.455, 0.03, 0.515, 0.955)
-        case .easeInCubic: return .init(controlPoints: 0.55, 0.055, 0.675, 0.19)
-        case .easeOutCubic: return .init(controlPoints: 0.215, 0.61, 0.355, 1)
-        case .easeInOutCubic: return .init(controlPoints: 0.645, 0.045, 0.355, 1)
-        case .easeInQuart: return .init(controlPoints: 0.895, 0.03, 0.685, 0.22)
-        case .easeOutQuart: return .init(controlPoints: 0.165, 0.84, 0.44, 1)
-        case .easeInOutQuart: return .init(controlPoints: 0.77, 0, 0.175, 1)
-        case .easeInQuint: return .init(controlPoints: 0.755, 0.05, 0.855, 0.06)
-        case .easeOutQuint: return .init(controlPoints: 0.23, 1, 0.32, 1)
-        case .easeInOutQuint: return .init(controlPoints: 0.86, 0, 0.07, 1)
-        case .easeInExpo: return .init(controlPoints: 0.95, 0.05, 0.795, 0.035)
-        case .easeOutExpo: return .init(controlPoints: 0.19, 1, 0.22, 1)
-        case .easeInOutExpo: return .init(controlPoints: 1, 0, 0, 1)
-        case .easeInCirc: return .init(controlPoints: 0.6, 0.04, 0.98, 0.335)
-        case .easeOutCirc: return .init(controlPoints: 0.075, 0.82, 0.165, 1)
-        case .easeInOutCirc: return .init(controlPoints: 0.785, 0.135, 0.15, 0.86)
-        case .easeInBack: return .init(controlPoints: 0.6, -0.28, 0.735, 0.045)
-        case .easeOutBack: return .init(controlPoints: 0.175, 0.885, 0.32, 1.275)
-        case .easeInOutBack: return .init(controlPoints: 0.68, -0.55, 0.265, 1.55)
-        default: return .init(name: .default)
+            completion?()
         }
     }
 }

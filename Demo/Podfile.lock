@@ -1,0 +1,16 @@
+PODS:
+  - Spring (1.1.0)
+
+DEPENDENCIES:
+  - Spring (from `../`)
+
+EXTERNAL SOURCES:
+  Spring:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Spring: 5daf5b734707474f4eaedb75ea86e2c767b2f6cc
+
+PODFILE CHECKSUM: e2f2cdf217d9945aa59ca504c6059364a4567c30
+
+COCOAPODS: 1.6.1
