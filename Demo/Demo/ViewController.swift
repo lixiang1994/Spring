@@ -20,10 +20,10 @@ class ViewController: UIViewController {
     
     @IBAction func animationAction(_ sender: UITapGestureRecognizer) {
         animationView.spring
-            .opacity(0.0)
-            .scale(0.8, 0.8)
             .duration(2)
             .curve(.easeOutQuad)
+//            .animateFrom(false)
+            .animation(.fadeInRight)
             .animate()
     }
 }

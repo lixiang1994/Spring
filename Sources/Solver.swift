@@ -147,8 +147,8 @@ extension Solver {
             config.opacity = 0
             
         case .fadeOut:
-            set(animateFrom: false)
             config.opacity = 0
+            config.animateFrom = false
             
         case .fadeOutIn:
             let animation = CABasicAnimation()
@@ -166,16 +166,16 @@ extension Solver {
             config.x = 300 * force
             
         case .fadeInRight:
-            config.x = -300 * force
             config.opacity = 0
+            config.x = -300 * force
             
         case .fadeInDown:
-            config.y = -300 * force
             config.opacity = 0
+            config.y = -300 * force
             
         case .fadeInUp:
-            config.y = 300 * force
             config.opacity = 0
+            config.y = 300 * force
             
         case .zoomIn:
             config.opacity = 0
@@ -183,15 +183,15 @@ extension Solver {
             config.scaleY = 2 * force
             
         case .zoomOut:
-            set(animateFrom: false)
             config.opacity = 0
             config.scaleX = 2 * force
             config.scaleY = 2 * force
+            config.animateFrom = false
             
         case .fall:
-            set(animateFrom: false)
             config.rotate = 15 * (.pi / 180.0)
             config.y = 600 * force
+            config.animateFrom = false
             
         case .shake:
             let animation = CAKeyframeAnimation()
@@ -398,10 +398,6 @@ extension Solver {
 }
 
 extension Solver {
-    
-    func set(animateFrom value: Bool) {
-        config.animateFrom = value
-    }
     
     private func reset() {
         config.x = 0
