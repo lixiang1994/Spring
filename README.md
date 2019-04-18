@@ -52,57 +52,61 @@ Here are some usage examples. All devices are also available as simulators:
 ```
 
 ### Functions
-    animate()
-    animateNext { ... }
-    animateTo()
-    animateToNext { ... }
+```
+animate() { ... }
+```
 
 ### Animation
-    shake
-    pop
-    morph
-    squeeze
-    wobble
-    swing
-    flipX
-    flipY
-    fall
-    squeezeLeft
-    squeezeRight
-    squeezeDown
-    squeezeUp
-    slideLeft
-    slideRight
-    slideDown
-    slideUp
-    fadeIn
-    fadeOut
-    fadeInLeft
-    fadeInRight
-    fadeInDown
-    fadeInUp
-    zoomIn
-    zoomOut
-    flash
-
+```
+shake
+pop
+morph
+squeeze
+wobble
+swing
+flipX
+flipY
+fall
+squeezeLeft
+squeezeRight
+squeezeDown
+squeezeUp
+slideLeft
+slideRight
+slideDown
+slideUp
+fadeIn
+fadeOut
+fadeInLeft
+fadeInRight
+fadeInDown
+fadeInUp
+zoomIn
+zoomOut
+flash
+```
 ### Curve
-    spring
-    linear
-    easeIn
-    easeOut
-    easeInOut
+```
+spring
+linear
+easeIn
+easeOut
+easeInOut
+```
 
 ### Properties
-    force
-    duration
-    delay
-    damping
-    velocity
-    repeatCount
-    scale
-    x
-    y
-    rotate
+```
+force
+duration
+delay
+damping
+velocity
+repeatCount
+scale
+x
+y
+rotate
+```
 
 \* Not all properties work together.
 

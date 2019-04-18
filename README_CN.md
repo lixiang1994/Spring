@@ -51,12 +51,11 @@ animationView.spring
 ```
 
 ### 方法
-animate()
-animateNext { ... }
-animateTo()
-animateToNext { ... }
-
+```
+animate() { ... }
+```
 ### 动画类型
+```
 shake
 pop
 morph
@@ -83,15 +82,19 @@ fadeInUp
 zoomIn
 zoomOut
 flash
+```
 
 ### 曲线
+```
 spring
 linear
 easeIn
 easeOut
 easeInOut
+```
 
 ### 特性
+```
 force
 duration
 delay
@@ -102,6 +105,7 @@ scale
 x
 y
 rotate
+```
 
 \* 并非所有属性都能一起使用.
 
