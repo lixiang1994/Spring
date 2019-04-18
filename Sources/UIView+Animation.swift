@@ -115,12 +115,6 @@ public extension Wrapper where Base: UIView {
         solver.animate(completion: completion)
     }
     
-    func animateTo(_ animation: Animation.Preset? = .none,
-                   completion: (() -> Void)? = .none) {
-        animation.map { config.animation = $0 }
-        solver.animateTo(completion: completion)
-    }
-    
     func customAwakeFromNib() {
         solver.customLayoutSubviews()
     }

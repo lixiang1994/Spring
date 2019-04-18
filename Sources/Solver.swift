@@ -33,13 +33,6 @@ class Solver: NSObject {
 extension Solver {
     
     func animate(completion: (() -> Void)? = .none) {
-        set(animateFrom: true)
-        animatePreset()
-        set(view: completion)
-    }
-    
-    func animateTo(completion: (() -> Void)? = .none) {
-        set(animateFrom: false)
         animatePreset()
         set(view: completion)
     }
