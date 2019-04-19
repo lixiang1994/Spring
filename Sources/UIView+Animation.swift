@@ -106,7 +106,6 @@ public extension Wrapper where Base: UIView {
     }
 }
 
-private var taskConfigKey: Void?
 private var taskSolverKey: Void?
 
 extension Wrapper where Base: UIView {
@@ -116,17 +115,12 @@ extension Wrapper where Base: UIView {
     }
     
     private var config: Config {
-        guard let config = objc_getAssociatedObject(base, &taskConfigKey) as? Config else {
-            let value = Config()
-            objc_setAssociatedObject(base, &taskConfigKey, value, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
-            return value
-        }
-        return config
+        return solver.config
     }
     
     private var solver: Solver {
         guard let solver = objc_getAssociatedObject(base, &taskSolverKey) as? Solver else {
-            let value = Solver(config, base)
+            let value = Solver(Config(), base)
             objc_setAssociatedObject(base, &taskSolverKey, value, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
             return value
         }

@@ -16,8 +16,8 @@ import UIKit
 
 class Solver: NSObject {
     
-    private let config: Config
-    private let view: UIView
+    let config: Config
+    let view: UIView
     
     init(_ config: Config, _ view: UIView) {
         self.config = config
