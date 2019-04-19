@@ -18,16 +18,6 @@ import UIKit
 public extension Wrapper where Base: UIView {
     
     @discardableResult
-    func autostart(_ autostart: Bool) -> Wrapper {
-        config.autostart = autostart
-        return self
-    }
-    @discardableResult
-    func autohide(_ autohide: Bool) -> Wrapper {
-        config.autohide = autohide
-        return self
-    }
-    @discardableResult
     func force(_ force: CGFloat) -> Wrapper {
         config.force = force
         return self
@@ -110,17 +100,9 @@ public extension Wrapper where Base: UIView {
 public extension Wrapper where Base: UIView {
     
     func animate(_ animation: Animation.Preset? = .none,
-                        completion: (() -> Void)? = .none) {
+                 completion: (() -> Void)? = .none) {
         animation.map { config.animation = $0 }
         solver.animate(completion: completion)
-    }
-    
-    func customAwakeFromNib() {
-        solver.customLayoutSubviews()
-    }
-    
-    func customLayoutSubviews() {
-        solver.customLayoutSubviews()
     }
 }
 

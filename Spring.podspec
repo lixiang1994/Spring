@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "Spring"
-s.version      = "1.1.3"
+s.version      = "1.1.4"
 s.summary      = "一个简单易用的iOS链式动画扩展库 Swift"
 
 s.homepage     = "https://github.com/lixiang1994/Spring"

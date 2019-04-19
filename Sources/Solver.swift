@@ -19,14 +19,10 @@ class Solver: NSObject {
     private let config: Config
     private let view: UIView
     
-    private var shouldAnimateAfterActive = false
-    private var shouldAnimateInLayoutSubviews = true
-    
     init(_ config: Config, _ view: UIView) {
         self.config = config
         self.view = view
         super.init()
-        setupNotification()
     }
 }
 
@@ -36,52 +32,10 @@ extension Solver {
         animatePreset()
         set(view: completion)
     }
-    
-    func customAwakeFromNib() {
-        guard autohide else { return }
-        alpha = 0
-    }
-    
-    func customLayoutSubviews() {
-        guard shouldAnimateInLayoutSubviews else { return }
-        shouldAnimateInLayoutSubviews = false
-        
-        guard autostart, UIApplication.shared.applicationState == .active else {
-            shouldAnimateAfterActive = true
-            return
-        }
-        alpha = 0
-        animate()
-    }
-}
-
-// MARK: - Notification
-extension Solver {
-    
-    private func setupNotification() {
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(didBecomeActive),
-            name: UIApplication.didBecomeActiveNotification,
-            object: nil
-        )
-    }
-    
-    @objc private func didBecomeActive(_ sender: NSNotification) {
-        guard shouldAnimateAfterActive else {
-            return
-        }
-        
-        view.alpha = 0
-        animate()
-        shouldAnimateAfterActive = false
-    }
 }
 
 extension Solver {
     
-    private var autostart: Bool { return config.autostart }
-    private var autohide: Bool { return config.autohide }
     private var animation: Animation.Preset { return config.animation}
     private var force: CGFloat { return config.force }
     private var delay: CGFloat { return config.delay }
@@ -406,17 +360,20 @@ extension Solver {
     }
     
     private func resetAll() {
-        config.x = 0
-        config.y = 0
-        config.animation = .none
-        config.opacity = 1
-        config.scaleX = 1
-        config.scaleY = 1
-        config.rotate = 0
+        config.force = 1
+        config.delay = 0
+        config.duration = 0.7
         config.damping = 0.7
         config.velocity = 0.7
         config.repeatCount = 1
-        config.delay = 0
-        config.duration = 0.7
+        config.x = 0
+        config.y = 0
+        config.scaleX = 1
+        config.scaleY = 1
+        config.rotate = 0
+        config.animation = .none
+        config.curve = .none
+        config.opacity = 1
+        config.animateFrom = true
     }
 }

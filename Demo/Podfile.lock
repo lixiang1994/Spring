@@ -1,5 +1,5 @@
 PODS:
-  - Spring (1.1.2)
+  - Spring (1.1.4)
 
 DEPENDENCIES:
   - Spring (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Spring: 7decb1e039f6b26095da3d296fead0f050c89358
+  Spring: 57a922271f575718f533df5bab3fd6bded47c051
 
 PODFILE CHECKSUM: e2f2cdf217d9945aa59ca504c6059364a4567c30
 
