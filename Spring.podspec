@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
 
 s.name         = "Spring"
 s.version      = "1.1.5"
-s.summary      = "一个简单易用的iOS链式动画扩展库 Swift"
+s.summary      = "An elegant animation written in swift"
 
 s.homepage     = "https://github.com/lixiang1994/Spring"
 
